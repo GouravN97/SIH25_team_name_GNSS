@@ -91,7 +91,7 @@ To show that **PatchTST predicts errors for smaller datasets (as the one provide
 - scikit-learn
 - torch
 - matplotlib (for plots)
-- _optional:_ darts (for seeing how LSTM performs)
+- _optional:_ darts (for seeing how LSTM performs on the same dataset, download the lstm_model.py file from the lstm folder and run).
 
 ---
 
