@@ -80,7 +80,7 @@ To show that **PatchTST predicts errors for smaller datasets (as the one provide
 - We trained both the PatchTST model and LSTM model on the data of first 6 days.
 - Then tested it against the data of the 7th day.
 - The Shapiro-Wilk test for normalisation passed in 3 out of 4 cases, with the 4th case's score close passing.
-- The mse, rse and rae values were not too far off the actual data.
+- The mse, rse and rae values were within reasonable bounds.
 
 ---
 
