@@ -116,18 +116,11 @@ To show that **PatchTST predicts errors for smaller datasets (as the one provide
 
 Contributions, issues, and feature requests are welcome!
 
+-
 ---
 
-## 📝 License
 
-This project is part of the Smart India Hackathon 2025.
-
----
-
-## 🏆 Authors
-
-[Your Team Name/Members]
 
 ---
 
-**Made with ❤️ for accurate GNSS positioning**
+
