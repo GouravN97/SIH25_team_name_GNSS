@@ -4,7 +4,25 @@
 >
 > 
 ---
+## How to Run (Linux / WSL)
+1. Download the PatchTST_model.zip
+   
+2. Create a virtual environment using
+             python3 -m venv patchtst_env
+   
+3. Run the command
+             pip install -r requirements.txt
+   
+4. Now the model is ready to run!
+   (i) For testing against 7th day
+             python3 run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
+   
+   (ii)For testing against 8th day (unspecified)
+             python3 run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
+   
+5. Results for the next day are automatically saved in the "results" folder and plots are automatically saved in the "graphs" folder.
 
+   
 ##  Project Overview
 
 This project develops ML models using PatchTST, a transformer-based model, to predict the time-varying differences (errors) between the **uploaded/broadcast** and **ICD-based modeled** values of GNSS satellite clock biases and ephemeris (orbit) parameters. The objective is to predict these errors at 15-minute intervals for an unseen 8th day, using the provided seven-day training dataset. Improvements in these predictions increase the accuracy and reliability of GNSS positioning and timing.
