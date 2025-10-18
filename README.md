@@ -6,7 +6,7 @@
 
 ## 🚀 How to Run 
 
-### 1. Setup Environment
+### 1. Required Files
 
 Download the `PatchTST_model.zip` and extract it.
 
@@ -19,7 +19,7 @@ source patchtst_env/bin/activate
 ```
 
 ```cmd
-# cmd
+# command prompt
 py -m venv patchtst_env
 patchtst_env\Scripts\activate
 ```
@@ -43,7 +43,7 @@ python3 run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)
 ```
 
 ```cmd
-# cmd
+# command prompt
 python run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
 ```
 
@@ -55,7 +55,7 @@ python3 run_8thday.py --input_file Data_GEO_Train.csv --target_column "z_error (
 ```
 
 ```cmd
-::cmd
+# command prompt
 python run_8thday.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
 ```
 
