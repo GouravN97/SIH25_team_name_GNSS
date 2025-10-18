@@ -13,11 +13,13 @@ Download the `PatchTST_model.zip` and extract it.
 ### 2. Create Virtual Environment
 
 ```bash
+# On Linux/WSL
 python3 -m venv patchtst_env
-source patchtst_env/bin/activate  # On Linux/WSL
+source patchtst_env/bin/activate  
 ```
 
 ```cmd
+# On cmd
 py -m venv patchtst_env
 patchtst_env\Scripts\activate
 ```
@@ -31,17 +33,30 @@ pip install -r requirements.txt
 ### 4. Run the Model
 
 Now the model is set to run!
+Just modify the commands as per the name of the dataset(e.g., Data_GEO_Train.csv) and the specific column name(e.g., z_error (m)) in that dataset.
 
 #### (i) For testing against 7th day
 
 ```bash
+#Linux/WSL
 python3 run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
+```
+
+```cmd
+#cmd
+python run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
 ```
 
 #### (ii) For testing against 8th day (unspecified)
 
 ```bash
+#Linux/WSL
 python3 run_8thday.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
+```
+
+```cmd
+#cmd
+python run_8thday.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
 ```
 
 ### 5. View Results
