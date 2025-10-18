@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 How to Run (Linux / WSL)
+## 🚀 How to Run 
 
 ### 1. Setup Environment
 
@@ -17,6 +17,11 @@ python3 -m venv patchtst_env
 source patchtst_env/bin/activate  # On Linux/WSL
 ```
 
+```cmd
+py -m venv patchtst_env
+patchtst_env\Scripts\activate
+```
+
 ### 3. Install Dependencies
 
 ```bash
@@ -25,7 +30,7 @@ pip install -r requirements.txt
 
 ### 4. Run the Model
 
-Now the model is ready to run!
+Now the model is set to run!
 
 #### (i) For testing against 7th day
 
