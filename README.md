@@ -19,7 +19,7 @@ source patchtst_env/bin/activate
 ```
 
 ```cmd
-# On cmd
+# cmd
 py -m venv patchtst_env
 patchtst_env\Scripts\activate
 ```
@@ -43,7 +43,7 @@ python3 run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)
 ```
 
 ```cmd
-#cmd
+# cmd
 python run_full.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
 ```
 
@@ -55,7 +55,7 @@ python3 run_8thday.py --input_file Data_GEO_Train.csv --target_column "z_error (
 ```
 
 ```cmd
-#cmd
+::cmd
 python run_8thday.py --input_file Data_GEO_Train.csv --target_column "z_error (m)"
 ```
 
