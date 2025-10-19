@@ -1,6 +1,6 @@
 # 🛰️ GNSS Clock & Ephemeris Error Prediction
 
-> **Project:** Predicting time-varying errors between uploaded (broadcast) and modeled satellite clock & ephemeris values
+> **Project:** Predicting time-varying errors between uploaded (broadcast) and modeled satellite clock & ephemeris values using PatchTST, a transformer-based model.
 
 ---
 
