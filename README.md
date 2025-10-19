@@ -1,6 +1,6 @@
 # 🛰️ GNSS Clock & Ephemeris Error Prediction
 
-> **Project:** Predicting time-varying errors between uploaded (broadcast) and modeled satellite clock & ephemeris values using PatchTST, a transformer-based model.
+> **Project:** Predicting time-varying errors between uploaded (broadcast) and modeled GNSS clock & ephemeris values using PatchTST, a transformer-based model.
 
 ---
 
@@ -35,7 +35,7 @@ pip install -r requirements.txt
 Now the model is set to run!
 Just modify the commands as per the name of the dataset(e.g., Data_GEO_Train.csv) and the specific column name(e.g., z_error (m)) in that dataset.
 
-#### (i) For testing against 7th day
+#### (i) For testing against 7th day (shows Shapiro-Wilk Test Results and Double Line Graph)
 
 ```bash
 #Linux/WSL
@@ -136,7 +136,7 @@ To show that **PatchTST predicts errors for smaller datasets (as the one provide
 
 Contributions, issues, and feature requests are welcome!
 
--
+
 ---
 
 
