@@ -1,0 +1,42 @@
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.7007243633270264, mae:1.0622366666793823, rse:1.2120128870010376
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.4236550331115723, mae:0.9612038135528564, rse:1.2348133325576782
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.5629750490188599, mae:0.9730169773101807, rse:1.2284992933273315
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.2776862382888794, mae:0.7519223093986511, rse:1.1137205362319946
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.7007243633270264, mae:1.0622366666793823, rse:1.2120128870010376
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.4236550331115723, mae:0.9612038135528564, rse:1.2348133325576782
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.463495135307312, mae:0.9920807480812073, rse:1.251971960067749
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.463495135307312, mae:0.9920807480812073, rse:1.251971960067749
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.682360291481018, mae:1.0500589609146118, rse:1.205451488494873
+
+6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.5590177774429321, mae:0.9749502539634705, rse:1.2269431352615356
+
+7_1_PatchTST_custom_ftMS_sl7_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Final_0  
+mse:1.5327013731002808, mae:0.9534638524055481, rse:1.216543436050415
+
+geodata_6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.5590177774429321, mae:0.9749502539634705, rse:1.2269431352615356
+
+geodata8thday_7_1_PatchTST_custom_ftMS_sl7_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Final_0  
+mse:1.5327013731002808, mae:0.9534638524055481, rse:1.216543436050415
+
+geodata8thday_7_1_PatchTST_custom_ftMS_sl7_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Final_0  
+mse:1.3934255838394165, mae:0.9130724668502808, rse:1.2216331958770752
+

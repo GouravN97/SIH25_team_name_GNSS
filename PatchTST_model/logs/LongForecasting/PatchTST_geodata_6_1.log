@@ -1,0 +1,26 @@
+Args in experiment:
+Namespace(random_seed=2021, is_training=1, model_id='geodata_6_1', model='PatchTST', data='custom', root_path='.\\', data_path='geodata.csv', features='MS', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=6, label_len=48, pred_len=1, fc_dropout=0.2, head_dropout=0.0, patch_len=2, stride=1, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=4, dec_in=7, c_out=7, d_model=128, n_heads=16, e_layers=2, d_layers=1, d_ff=256, moving_avg=25, factor=1, distil=True, dropout=0.2, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=4, batch_size=1, patience=20, learning_rate=0.0001, des='Exp', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Use CPU
+>>>>>>>start training : geodata_6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 85
+val 14
+test 26
+Epoch: 1 cost time: 19.806445360183716
+Epoch: 1, Steps: 85 | Train Loss: nan Vali Loss: 0.7957783 Test Loss: 1.5590178
+Validation loss decreased (inf --> 0.795778).  Saving model ...
+Updating learning rate to 0.0001
+Epoch: 2 cost time: 16.031147003173828
+Epoch: 2, Steps: 85 | Train Loss: nan Vali Loss: 0.9569702 Test Loss: 1.3974106
+EarlyStopping counter: 1 out of 20
+Updating learning rate to 0.0001
+Epoch: 3 cost time: 18.544263124465942
+Epoch: 3, Steps: 85 | Train Loss: nan Vali Loss: 1.1853389 Test Loss: 1.3668811
+EarlyStopping counter: 2 out of 20
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 16.55282163619995
+Epoch: 4, Steps: 85 | Train Loss: nan Vali Loss: 1.3015300 Test Loss: 1.5503793
+EarlyStopping counter: 3 out of 20
+Updating learning rate to 9e-05
+>>>>>>>testing : geodata_6_1_PatchTST_custom_ftMS_sl6_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Exp_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 26
+mse:1.5590177774429321, mae:0.9749502539634705, rse:1.2269431352615356
