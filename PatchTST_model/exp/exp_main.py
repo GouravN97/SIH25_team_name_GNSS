@@ -280,14 +280,36 @@ class Exp_Main(Exp_Basic):
                     gt = np.concatenate((input[0, :, -1], true[0, :, -1]), axis=0)
                     pd = np.concatenate((input[0, :, -1], pred[0, :, -1]), axis=0)
                     visual(gt, pd, os.path.join(folder_path, str(i) + '.pdf'))
+                    
+        # Add this RIGHT AFTER the for loop ends (after line ~278)
+        print(f"DEBUG: Number of batches collected: {len(preds)}")
+        print(f"DEBUG: Shapes of first few predictions:")
+        for idx, p in enumerate(preds[:5]):
+            print(f"  Batch {idx}: {p.shape}")
+        if len(preds) > 5:
+            print(f"  Batch {len(preds)-1} (last): {preds[-1].shape}")
 
         if self.args.test_flop:
             test_params_flop((batch_x.shape[1],batch_x.shape[2]))
             exit()
-        preds = np.array(preds)
-        trues = np.array(trues)
-        inputx = np.array(inputx)
 
+       # Filter out batches with empty sequence dimension (dim 1)
+        valid_indices = [i for i, t in enumerate(trues) if t.shape[0] > 0 and t.shape[1] > 0]
+        
+        print(f"DEBUG: Total batches: {len(preds)}, Valid batches: {len(valid_indices)}")
+        
+        if len(valid_indices) == 0:
+            raise ValueError("No valid predictions - all batches have empty sequences")
+        
+        trues = [trues[i] for i in valid_indices]
+        preds = [preds[i] for i in valid_indices]
+        inputx = [inputx[i] for i in valid_indices]
+        
+        # Now concatenate
+        trues = np.concatenate(trues, axis=0)
+        preds = np.concatenate(preds, axis=0)
+        inputx = np.concatenate(inputx, axis=0)
+        
         preds = preds.reshape(-1, preds.shape[-2], preds.shape[-1])
         trues = trues.reshape(-1, trues.shape[-2], trues.shape[-1])
         inputx = inputx.reshape(-1, inputx.shape[-2], inputx.shape[-1])

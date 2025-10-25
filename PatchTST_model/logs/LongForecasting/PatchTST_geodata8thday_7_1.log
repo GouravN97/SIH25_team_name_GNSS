@@ -1,15 +1,35 @@
 Args in experiment:
-Namespace(random_seed=2021, is_training=1, model_id='geodata8thday_7_1', model='PatchTST', data='custom', root_path='.\\', data_path='geodata.csv', features='MS', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=7, label_len=48, pred_len=1, fc_dropout=0.2, head_dropout=0.0, patch_len=2, stride=1, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=4, dec_in=7, c_out=7, d_model=128, n_heads=16, e_layers=2, d_layers=1, d_ff=256, moving_avg=25, factor=1, distil=True, dropout=0.2, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=4, batch_size=1, patience=20, learning_rate=0.0001, des='Final', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
+Namespace(random_seed=2021, is_training=1, model_id='7_1', model='PatchTST', data='custom', root_path='./', data_path='geodata.csv', features='MS', target='OT', freq='h', checkpoints='./checkpoints/', seq_len=7, label_len=48, pred_len=1, fc_dropout=0.2, head_dropout=0.0, patch_len=2, stride=1, padding_patch='end', revin=1, affine=0, subtract_last=0, decomposition=0, kernel_size=25, individual=0, embed_type=0, enc_in=4, dec_in=7, c_out=7, d_model=128, n_heads=16, e_layers=2, d_layers=1, d_ff=256, moving_avg=25, factor=1, distil=True, dropout=0.2, embed='timeF', activation='gelu', output_attention=False, do_predict=False, num_workers=10, itr=1, train_epochs=4, batch_size=1, patience=20, learning_rate=0.0001, des='Final', loss='mse', lradj='type3', pct_start=0.3, use_amp=False, use_gpu=False, gpu=0, use_multi_gpu=False, devices='0,1,2,3', test_flop=False)
 Use CPU
->>>>>>>start training : geodata8thday_7_1_PatchTST_custom_ftMS_sl7_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Final_0>>>>>>>>>>>>>>>>>>>>>>>>>>
-train 85
+>>>>>>>start training : 7_1_PatchTST_custom_ftMS_sl7_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Final_0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 81
 val 14
-test 26
-Epoch: 1 cost time: 15.296870946884155
-Epoch: 1, Steps: 85 | Train Loss: nan Vali Loss: 0.9232299 Test Loss: 1.3934256
-Validation loss decreased (inf --> 0.923230).  Saving model ...
+test 25
+Epoch: 1 cost time: 1.4684488773345947
+Epoch: 1, Steps: 81 | Train Loss: nan Vali Loss: 0.2724210 Test Loss: 0.5179876
+Validation loss decreased (inf --> 0.272421).  Saving model ...
 Updating learning rate to 0.0001
-Epoch: 2 cost time: 17.004987478256226
-Epoch: 2, Steps: 85 | Train Loss: nan Vali Loss: 1.0787485 Test Loss: 1.6358511
+Epoch: 2 cost time: 1.224565029144287
+Epoch: 2, Steps: 81 | Train Loss: nan Vali Loss: 0.3586176 Test Loss: 0.3663427
 EarlyStopping counter: 1 out of 20
 Updating learning rate to 0.0001
+Epoch: 3 cost time: 1.2185213565826416
+Epoch: 3, Steps: 81 | Train Loss: nan Vali Loss: 0.3623741 Test Loss: 0.3602291
+EarlyStopping counter: 2 out of 20
+Updating learning rate to 0.0001
+Epoch: 4 cost time: 1.238220453262329
+Epoch: 4, Steps: 81 | Train Loss: nan Vali Loss: 0.3925657 Test Loss: 0.3596655
+EarlyStopping counter: 3 out of 20
+Updating learning rate to 9e-05
+>>>>>>>testing : 7_1_PatchTST_custom_ftMS_sl7_ll48_pl1_dm128_nh16_el2_dl1_df256_fc1_ebtimeF_dtTrue_Final_0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 25
+DEBUG: Number of batches collected: 25
+DEBUG: Shapes of first few predictions:
+  Batch 0: (1, 1, 1)
+  Batch 1: (1, 1, 1)
+  Batch 2: (1, 1, 1)
+  Batch 3: (1, 1, 1)
+  Batch 4: (1, 1, 1)
+  Batch 24 (last): (1, 1, 1)
+DEBUG: Total batches: 25, Valid batches: 25
+mse:0.5179876089096069, mae:0.6071786880493164, rse:1.116549015045166

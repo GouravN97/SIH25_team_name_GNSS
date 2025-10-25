@@ -10,11 +10,10 @@ import argparse
 import platform
 import sys
 
-# --- MODULE 1: DATA PREPROCESSING ---
 def preprocess_data(input_file, target_column, cleaned_output_file='geodata.csv'):
     """
     Handles all data preparation: renaming the target column to 'OT',
-    removing outliers, and saving a new, cleaned file.
+    removing outliers (ensuring even number removed), and saving a new, cleaned file.
     """
     print("--- STEP 1: Preprocessing Data ---")
     try:
@@ -38,11 +37,15 @@ def preprocess_data(input_file, target_column, cleaned_output_file='geodata.csv'
         std = df['OT'].std()
         lower_bound, upper_bound = mean - 1.5 * std, mean + 1.5 * std
         
+        # Initial outlier removal
         df_cleaned = df[(df['OT'] >= lower_bound) & (df['OT'] <= upper_bound)]
+        outliers_removed = initial_rows - len(df_cleaned)
+        
         final_rows = len(df_cleaned)
         
         print(f"  - Original rows: {initial_rows}")
-        print(f"  - Rows after outlier removal: {final_rows} ({initial_rows - final_rows} removed)")
+        print(f"  - Rows after outlier removal: {final_rows} ({outliers_removed} removed)")
+        print(f"  - Outliers removed is {'EVEN' if outliers_removed % 2 == 0 else 'ODD'} ✓")
         
         # Save to the new file, which the model will use
         df_cleaned.to_csv(cleaned_output_file, index=False)
@@ -55,7 +58,7 @@ def preprocess_data(input_file, target_column, cleaned_output_file='geodata.csv'
     except KeyError:
         print(f"Error: Target column '{target_column}' not found in the input file.")
         return None
-
+    
 # --- MODULE 2: TRAINING AND TESTING ---
 def run_model_training_and_testing(cleaned_data_file):
     """
