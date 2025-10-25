@@ -74,10 +74,10 @@ The objective is to predict these errors at 15-minute intervals for an unseen 8t
 ---
 
 ## 📊 Dataset
-
 **Provided:** 7 days of timestamped error measurements (clock biases and ephemeris parameter differences) for GNSS satellites in GEO and MEO.
 
 🔗 [Download Dataset](https://www.sac.gov.in/files/sih/SIH_Data_PS-08.zip)
+**NOTE:** THE DATA_MEO_Train2.csv file is only modified in our folder to remove duplicate data and make it easier for the program to process
 
 ---
 
